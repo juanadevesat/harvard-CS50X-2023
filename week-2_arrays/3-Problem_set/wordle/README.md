@@ -2,16 +2,7 @@
 
 For this problem, you’ll implement a program that behaves similarly to the popular Wordle daily word game.
 
-> $ ./wordle 5\
-<span style="background-color:green">This is WORDLE50</span>\
-You have 6 tries to guess the 5-letter word I'm thinking of\
-Input a 5-letter word: crash\
-Guess 1: <span style="background-color:yellow">c</span><span style="background-color:red">ra</span><span style="background-color:yellow">s</span><span style="background-color:red">h</span>\
-Input a 5-letter word: scone\
-Guess 2: <span style="background-color:green">s</span><span style="background-color:yellow">c</span><span style="background-color:red">o</span><span style="background-color:yellow">n</span><span style="background-color:green">e</span>\
-Input a 5-letter word: since\
-Guess 3: <span style="background-color:green">since</span>\
-You won!
+![alt text](img/Screenshot_1.png)
 
 ### Background
 
@@ -42,19 +33,7 @@ Here’s how the program might work if the user provides a key of 5:
 
 At which point, the user should type in a 5-letter word. Of course, the user could well be stubborn, and we should make sure they’re following the rules:
 
-<span style="background-color:green"></span>
-<span style="background-color:yellow"></span>
-<span style="background-color:red"></span>
-
->$ ./wordle 5\
-<span style="background-color:green">This is WORDLE50</span>\
-You have 6 tries to guess the 5-letter word I'm thinking of\
-Input a 5-letter word: wordle\
-Input a 5-letter word: computer\
-Input a 5-letter word: okay\
-Input a 5-letter word: games\
-Guess 1: <span style="background-color:red">g</span><span style="background-color:yellow">a</span><span style="background-color:red">m</span><span style="background-color:yellow">e</span><span style="background-color:red">s</span>\
-Input a 5-letter word:
+![alt text](img/Screenshot_2.png)
 
 Notice that we didn’t even count any of those invalid attempts as guesses. But as soon as they made a legitimate attempt, we counted it as a guess and reported on the status of the word. Looks like the user has a few clues now; they know the word contains an ``a`` and an ``e`` somewhere, but not in the exact spots they appear in the word games. And they know that ``g``, ``m``, and ``s`` don’t appear in the word at all, so future guesses can omit them. Perhaps they might try, say, ``heart`` next!
 
@@ -86,6 +65,8 @@ That’s normal, though! Implementing ``print_word`` is ``TODO`` number 6, so we
 printf(GREEN"This is WORDLE50"RESET"\n");
 ```
 
-Of course, unlike our example, you probably don’t want to print a newline after each character of the word (instead, you just want one newline at the end, also resetting the font color!)
+Of course, unlike our example, you probably don’t want to print a newline after each character of the word (instead, you just want one newline at the end, also resetting the font color!), lest it end up looking like the below:
+
+![alt text](img/Screenshot_3.png)
 
 7. Finally, the seventh ``TODO`` is just a bit of tidying up before the program terminates. Whether the main ``for`` loop has ended normally, by the user running out of guesses, or because we broke out of it by getting the word exactly right, it’s time to report to the user on the game’s outcome. If the user did win the game, a simple ``You won!`` suffices to print here. Otherwise, you should print a message telling the user what the target word was, so they know the game was being honest with them (and so that you have a means to debug if you look back and realize your code was providing improper clues along the way!)
