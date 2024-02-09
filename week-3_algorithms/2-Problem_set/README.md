@@ -1,6 +1,6 @@
 # What to Do
 
-1. Submit Plurality
+1. Submit **Plurality**
 2. Submit one of:
-    - Runoff, if feeling less comfortable
-    - Tideman, if feeling more comfortable
+    - **Runoff**, if feeling less comfortable
+    - **Tideman**, if feeling more comfortable
