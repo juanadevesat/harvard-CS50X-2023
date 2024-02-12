@@ -26,7 +26,7 @@ For this program, you’ll implement a program that runs a runoff election, per 
 
     Alice
 
-### Background
+## Background
 
 You already know about plurality elections, which follow a very simple algorithm for determining the winner of an election: every voter gets one vote, and the candidate with the most votes wins.
 
@@ -66,7 +66,7 @@ Some instant runoff elections don’t require voters to rank all of their prefer
 
 Sounds a bit more complicated than a plurality vote, doesn’t it? But it arguably has the benefit of being an election system where the winner of the election more accurately represents the preferences of the voters.
 
-### Understanding
+## Understanding
 
 Let’s take a look at ``runoff.c``. We’re defining two constants: ``MAX_CANDIDATES`` for the maximum number of candidates in the election, and ``MAX_VOTERS`` for the maximum number of voters in the election.
 
@@ -84,11 +84,11 @@ The first call here is to a function called ``tabulate``, which should look at a
 
 If you look a bit further down in the file, you’ll see that these functions — ``vote``, ``tabulate``, ``print_winner``, ``find_min``, ``is_tie``, and ``eliminate`` — are all left to up to you to complete!
 
-### Specification
+## Specification
 
 Complete the implementation of runoff.c in such a way that it simulates a runoff election. You should complete the implementations of the ``vote``, ``tabulate``, ``print_winner``, ``find_min``, ``is_tie``, and ``eliminate`` functions, and you should not modify anything else in ``runoff.c`` (and the inclusion of additional header files, if you’d like).
 
-#### vote
+### vote
 
 Complete the ``vote`` function.
 
@@ -104,7 +104,7 @@ Complete the ``vote`` function.
 >
 > Recall that preferences[i][j] stores the index of the candidate who is the jth ranked preference for the ith voter.
 
-#### tabulate
+### tabulate
 
 Complete the ``tabulate`` function.
 
@@ -123,7 +123,7 @@ Complete the ``tabulate`` function.
 >
 > Once you’ve cast a vote for a voter’s first non-eliminated candidate, you’ll want to stop there, not continue down their ballot! Recall that you can break out of a loop early using ``break`` inside of a conditional.
 
-#### print_winner
+### print_winner
 
 Complete the ``print_winner`` function.
 
@@ -134,7 +134,7 @@ Complete the ``print_winner`` function.
 > 
 > Recall that ``voter_count`` stores the number of voters in the election. Given that, how would you express the number of votes needed to win the election?
 
-#### find_min
+### find_min
 
 Complete the ``find_min`` function.
 
@@ -144,7 +144,7 @@ Complete the ``find_min`` function.
 >
 > You’ll likely want to loop through the candidates to find the one who is both still in the election and has the fewest number of votes. What information should you keep track of as you loop through the candidates?
 
-#### is_tie
+### is_tie
 
 Complete the ``is_tie`` function.
 
@@ -155,14 +155,14 @@ Complete the ``is_tie`` function.
 > 
 > Recall that a tie happens if every candidate still in the election has the same number of votes. Note, too, that the ``is_tie`` function takes an argument ``min``, which is the smallest number of votes any candidate currently has. How might you use that information to determine if the election is a tie (or, conversely, not a tie)?
 
-#### eliminate
+### eliminate
 
 Complete the ``eliminate`` function.
 
 - The function takes an argument ``min``, which will be the minimum number of votes that anyone in the election currently has.
 - The function should eliminate the candidate (or candidates) who have min number of votes.
 
-### Usage
+## Usage
 
 Your program should behave per the example below:
 
@@ -190,7 +190,7 @@ Your program should behave per the example below:
 
     Alice
 
-### Testing
+## Testing
 
 Be sure to test your code to make sure it handles…
 

@@ -1,12 +1,12 @@
 # Password
 
-### Learning Goals
+## Learning Goals
 
 - Practice iterating through a string
 - Practice using the ctype library
 - Practice using Boolean variables
 
-### Background
+## Background
 
 ![Alt text](img/spaceballs.jpg)
 
@@ -24,11 +24,11 @@ Demo
 
 ![Alt text](img/passwordDemo.gif)
 
-### Implementation Details
+## Implementation Details
 
 Your function will iterate through the password that’s supplied to it as an argument. Since you have to find at least one lower case letter, one upper case letter, one number and one symbol, you may want to create a boolean variable for each and set each to ``false`` before you iterate through the string. If you then find a number, for instance you can set that boolean to ``true``. If all booleans are ``true`` at the end of the function, it means all criteria are met, and you would return ``true``.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Your program should behave per the examples below.
 

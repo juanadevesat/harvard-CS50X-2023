@@ -30,19 +30,19 @@ Once finished with your project, select File > Save now one last time. Then sele
 
 For the scratch problem set I created a simple version of a carnival game where you shoot moving rubber ducks to knock them down:
 
-### Start:
+## Start:
 
 ![Alt text](img/Screenshot_1.png)
 
-### Game:
+## Game:
 
 ![Alt text](img/Screenshot_2.png)
 
-### Ending:
+## Ending:
 
 ![Alt text](img/Screenshot_3.png)
 
-### Sprites:
+## Sprites:
 
 **Duck:**
 

@@ -12,7 +12,7 @@ In a file called `bank.py`, implement a program that prompts the user for a gree
 >
 > Be sure to give $0 not only for “hello” but also “hello there”, “hello, Newman”, and the like.
 
-### How to Test
+## How to Test
 
 Here’s how to test your code manually:
 

@@ -6,7 +6,7 @@ Implement a program that computes the approximate grade level needed to comprehe
     Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
     Grade 3
 
-### Specification
+## Specification
 
 Write, in a file called `readability.py`, a program that first asks the user to type in some text, and then outputs the grade level for the text, according to the Coleman-Liau formula, exactly as you did in Problem Set 2, except that your program this time should be written in Python.
 
@@ -20,7 +20,7 @@ Your program should print as output `"Grade X"` where `X` is the grade level com
 
 If the resulting index number is 16 or higher (equivalent to or greater than a senior undergraduate reading level), your program should output `"Grade 16+"` instead of giving the exact index number. If the index number is less than 1, your program should output `"Before Grade 1"`.
 
-### Usage
+## Usage
 
 Your program should behave per the example below.
 
@@ -28,7 +28,7 @@ Your program should behave per the example below.
     Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
     Grade 3
 
-### Testing
+## Testing
 
 Run your program as `python readability.py`, and wait for a prompt for input. Type in `One fish. Two fish. Red fish. Blue fish.` and press enter. Your program should output `Before Grade 1`.
 

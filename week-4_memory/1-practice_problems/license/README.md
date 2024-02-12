@@ -1,17 +1,17 @@
 # License
 
-### Learning Goals
+## Learning Goals
 
 - Practice working with files and file pointers
 - More work with strings and arrays
 - Debugging with debug50
 - Use valgrind to check for memory leaks
 
-### Background
+## Background
 
 Suppose you work for a company that develops AI-enhanced license plate recognition technology. As you develop your technology, you may want to use actual license plate numbers as test data. You have a text file with some plate numbers you want to analyze, so you first try reading from that text file and printing out the license plates, to test your file-reading logic. But when you run your program, only the last number prints 8 times! What went wrong?
 
-### Implementation Details
+## Implementation Details
 
 If you open the ``plates.txt`` file, you’ll notice that there are actually 8 different license plate numbers. There are a few errors in the distribution code that are causing this to happen. Let’s start by walking through the code.
 
@@ -19,7 +19,7 @@ We first check for command-line arguments, since ``argv[1]`` should be the text 
 
 However, when we compile and execute this code, something is clearly wrong. You’ll need to make the appropriate corrections!
 
-### Debugging
+## Debugging
 
 Take a close look at what values are actually being added to the array. You can experiment with debug50 to find the error in the distribution code.
 
@@ -41,7 +41,7 @@ Is there a better way to copy license plate numbers to the ``license`` array?
 >
 > Is ``malloc`` required here?
 
-### Checking for Memory Leaks
+## Checking for Memory Leaks
 
 Once your program seems to be working properly, run valgrind to make sure there are no memory leaks.
 
@@ -81,7 +81,7 @@ There seem to be two kinds of memory errors here that need to be corrected!
 >
 > Your line numbers may be different, but note here that there seems to be a memory problem in ``main`` on line 30 (something to do with ``malloc``?), and line 20 (a problem related to ``fopen``?). What might the distribution code be missing?
 
-### How to Test Your Code
+## How to Test Your Code
 
 Your program should behave per the examples below.
 

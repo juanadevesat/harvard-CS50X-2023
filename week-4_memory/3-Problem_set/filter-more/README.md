@@ -8,9 +8,9 @@ $ ./filter -r IMAGE.bmp REFLECTED.bmp
 
 where `IMAGE.bmp` is the name of an image file and `REFLECTED.bmp` is the name given to an output image file, now reflected.
 
-### Background
+## Background
 
-#### Bitmaps
+### Bitmaps
 
 Perhaps the simplest way to represent an image is with a grid of pixels (i.e., dots), each of which can be of a different color. For black-and-white images, we thus need 1 bit per pixel, as 0 could represent black and 1 could represent white, as in the below.
 
@@ -22,7 +22,7 @@ A 24-bit BMP uses 8 bits to signify the amount of red in a pixel’s color, 8 bi
 
 If the R, G, and B values of some pixel in a BMP are, say, `0xff`, `0x00`, and `0x00` in hexadecimal, that pixel is purely red, as `0xff` (otherwise known as `255` in decimal) implies “a lot of red,” while `0x00` and `0x00` imply “no green” and “no blue,” respectively.
 
-#### A Bit(map) More Technical
+### A Bit(map) More Technical
 
 Recall that a file is just a sequence of bits, arranged in some fashion. A 24-bit BMP file, then, is essentially just a sequence of bits, (almost) every 24 of which happen to represent some pixel’s color. But a BMP file also contains some “metadata,” information like an image’s height and width. That metadata is stored at the beginning of the file in the form of two data structures generally referred to as “headers,” not to be confused with C’s header files. (Incidentally, these headers have evolved over time. This problem uses the latest version of Microsoft’s BMP format, 4.0, which debuted with Windows 95.)
 
@@ -36,7 +36,7 @@ To be clear, recall that a hexadecimal digit represents 4 bits. Accordingly, `ff
 
 Notice that you could represent a bitmap as a 2-dimensional array of pixels: where the image is an array of rows, each row is an array of pixels. Indeed, that’s how we’ve chosen to represent bitmap images in this problem.
 
-#### Image Filtering
+### Image Filtering
 
 What does it even mean to filter an image? You can think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
 
@@ -86,11 +86,11 @@ Using these kernels, we can generate a `Gx` and `Gy` value for each of the red, 
 
 And what about handling pixels at the edge, or in the corner of the image? There are many ways to handle pixels at the edge, but for the purposes of this problem, we’ll ask you to treat the image as if there was a 1 pixel solid black border around the edge of the image: therefore, trying to access a pixel past the edge of the image should be treated as a solid black pixel (values of 0 for each of red, green, and blue). This will effectively ignore those pixels from our calculations of `Gx` and `Gy`.
 
-### Understanding
+## Understanding
 
 Let’s now take a look at some of the files provided to you as distribution code to get an understanding for what’s inside of them.
 
-#### bmp.h
+### bmp.h
 
 Open up `bmp.h` (as by double-clicking on it in the file browser) and have a look.
 
@@ -100,7 +100,7 @@ Perhaps most importantly for you, this file also defines a `struct` called `RGBT
 
 Why are these `struct`s useful? Well, recall that a file is just a sequence of bytes (or, ultimately, bits) on disk. But those bytes are generally ordered in such a way that the first few represent something, the next few represent something else, and so on. “File formats” exist because the world has standardized what bytes mean what. Now, we could just read a file from disk into RAM as one big array of bytes. And we could just remember that the byte at `array[i]` represents one thing, while the byte at `array[j]` represents another. But why not give some of those bytes names so that we can retrieve them from memory more easily? That’s precisely what the structs in `bmp.h` allow us to do. Rather than think of some file as one long sequence of bytes, we can instead think of it as a sequence of `struct`s.
 
-#### filter.c
+### filter.c
 
 Now, let’s open up `filter.c`. This file has been written already for you, but there are a couple important points worth noting here.
 
@@ -114,17 +114,17 @@ These are the functions you’ll (soon!) implement. As you might imagine, the go
 
 The remaining lines of the program take the resulting `image` and write them out to a new image file.
 
-#### helpers.h
+### helpers.h
 
 Next, take a look at `helpers.h`. This file is quite short, and just provides the function prototypes for the functions you saw earlier.
 
 Here, take note of the fact that each function takes a 2D array called `image` as an argument, where `image` is an array of `height` many rows, and each row is itself another array of `width` many `RGBTRIPLE`s. So if image represents the whole picture, then `image[0]` represents the first row, and `image[0][0]` represents the pixel in the upper-left corner of the image.
 
-#### helpers.c
+### helpers.c
 
 Now, open up `helpers.c`. Here’s where the implementation of the functions declared in `helpers.h` belong. But note that, right now, the implementations are missing! This part is up to you.
 
-#### Makefile
+### Makefile
 
 Finally, let’s look at `Makefile`. This file specifies what should happen when we run a terminal command like `make filter`. Whereas programs you may have written before were confined to just one file, `filter` seems to use multiple files: `filter.c` and `helpers.c`. So we’ll need to tell `make` how to compile this file.
 
@@ -152,7 +152,7 @@ Implement the functions in `helpers.c` such that a user can apply grayscale, ref
 
 You should not modify any of the function signatures, nor should you modify any other files other than `helpers.c`.
 
-### Usage
+## Usage
 
 Your program should behave per the examples below. `INFILE.bmp` is the name of the input image and `OUTFILE.bmp` is the name of the resulting image after a filter has been applied.
 
@@ -172,10 +172,10 @@ $ ./filter -b INFILE.bmp OUTFILE.bmp
 $ ./filter -e INFILE.bmp OUTFILE.bmp
 ```
 
-### Hints
+## Hints
 
 The values of a pixel’s `rgbtRed`, `rgbtGreen`, and `rgbtBlue` components are all integers, so be sure to round any floating-point numbers to the nearest integer when assigning them to a pixel value!
 
-### Testing
+## Testing
 
 Be sure to test all of your filters on the sample bitmap files provided!

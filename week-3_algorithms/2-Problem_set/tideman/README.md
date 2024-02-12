@@ -85,7 +85,7 @@ Put more formally, the Tideman voting method consists of three parts:
 
 Once the graph is complete, the source of the graph (the one with no edges pointing towards it) is the winner!
 
-### Understanding
+## Understanding
 
 Let’s take a look at ``tideman.c``.
 
@@ -107,7 +107,7 @@ Once all of the votes are in, the pairs of candidates are added to the ``pairs``
 
 Further down in the file, you’ll see that the functions ``vote``, ``record_preference``, ``add_pairs``,``sort_pairs``, ``lock_pairs``, and ``print_winner`` are left blank. That’s up to you!
 
-### Specification
+## Specification
 
 Complete the implementation of ``tideman.c`` in such a way that it simulates a Tideman election.
 
@@ -137,7 +137,7 @@ Complete the implementation of ``tideman.c`` in such a way that it simulates a T
 
 You should not modify anything else in ``tideman.c`` other than the implementations of the ``vote``, ``record_preferences``, ``add_pairs``, ``sort_pairs``, ``lock_pairs``, and ``print_winner`` functions (and the inclusion of additional header files, if you’d like). You are permitted to add additional functions to ``tideman.c``, so long as you do not change the declarations of any of the existing functions.
 
-### Usage
+## Usage
 
 Your program should behave per the example below:
 
@@ -165,7 +165,7 @@ Your program should behave per the example below:
 
     Charlie
 
-### Testing
+## Testing
 
 Be sure to test your code to make sure it handles…
 

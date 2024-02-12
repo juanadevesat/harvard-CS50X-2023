@@ -11,7 +11,7 @@ Implement a program that prints out a double half-pyramid of a specified height,
     ###  ###
     ####  ####
 
-### Specification
+## Specification
 
 Write, in a file called `mario.py`, a program that recreates these half-pyramids using hashes (`#`) for blocks, exactly as you did in Problem Set 1, except that your program this time should be written in Python.
 
@@ -23,7 +23,7 @@ Then, generate (with the help of `print` and one or more loops) the desired half
 
 Take care to align the bottom-left corner of your pyramid with the left-hand edge of your terminal window, and ensure that there are two spaces between the two pyramids, and that there are no additional spaces after the last set of hashes on each row.
 
-### Usage
+## Usage
 
 Your program should behave per the example below.
 
@@ -34,7 +34,7 @@ Your program should behave per the example below.
     ###  ###
     ####  ####
 
-### Testing
+## Testing
 
 Run your program as `python mario.py` and wait for a prompt for input. Type in `-1` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 

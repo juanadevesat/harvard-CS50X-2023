@@ -6,7 +6,7 @@ Implement a program that recovers JPEGs from a forensic image, per the below.
 $ ./recover card.raw
 ```
 
-### Background
+## Background
 
 In anticipation of this problem, we spent the past several days taking photos around campus, all of which were saved on a digital camera as JPEGs on a memory card. Unfortunately, we somehow deleted them all! Thankfully, in the computer world, “deleted” tends not to mean “deleted” so much as “forgotten.” Even though the camera insists that the card is now blank, we’re pretty sure that’s not quite true. Indeed, we’re hoping (er, expecting!) you can write a program that recovers the photos for us!
 
@@ -28,7 +28,7 @@ Realize, of course, that JPEGs can span contiguous blocks. Otherwise, no JPEG co
 
 Now, I only have one memory card, but there are a lot of you! And so I’ve gone ahead and created a “forensic image” of the card, storing its contents, byte after byte, in a file called `card.raw`. So that you don’t waste time iterating over millions of 0s unnecessarily, I’ve only imaged the first few megabytes of the memory card. But you should ultimately find that the image contains 50 JPEGs.
 
-### Specification
+## Specification
 
 Implement a program called `recover.c` that recovers JPEGs from a forensic image.
 
@@ -39,7 +39,7 @@ Implement a program called `recover.c` that recovers JPEGs from a forensic image
 - The files you generate should each be named `###.jpg`, where `###` is a three-digit decimal number, starting with `000` for the first image and counting up.
 - Your program, if it uses `malloc`, must not leak any memory.
 
-### Usage
+## Usage
 
 Your program should behave per the examples below.
 
@@ -54,7 +54,7 @@ where `IMAGE` is the name of the forensic image. For example:
 $ ./recover card.raw
 ```
 
-### Hints
+## Hints
 
 Keep in mind that you can open `card.raw` programmatically with `fopen`, as with the below, provided `argv[1]` exists.
 

@@ -6,7 +6,7 @@ Implement a program that reverses a WAV file, per the below.
 ./reverse input.wav output.wav
 ```
 
-# Background
+## Background
 
 In Electric Light Orchestra’s “Fire on High”, there’s something a little off about the first minute or so of the music. If you take a listen, it sounds almost like the audio is playing backwards. As it turns out, if you play the beginning section of the song in reverse, you’ll hear the following:
 
@@ -16,7 +16,7 @@ Creepy, right? This is a technique called “backmasking,” or hiding messages 
 
 Unlike MP3 audio files, WAV files are not compressed. This makes the files much easier to edit and manipulate, which is useful for the task at hand. To learn a little more about WAV files, we need to take a closer look at the WAV file format.
 
-### The WAV File Format
+## The WAV File Format
 
 Notice that, in the visual below, a WAV file is broken into three chunks. Each chunk has a few blocks of data inside of it.
 
@@ -32,7 +32,7 @@ Everything before the audio data is considered part of the WAV “header”. Rec
 
 A more technical explanation of WAV headers can be found here, which is the resource by which this visual was inspired. Notice that we’ve included a file, wav.h, which implements all these details for you in a struct called `WAVHEADER`.
 
-### Specification
+## Specification
 
 Let’s write a program called called reverse that enables us to reverse a WAV file given by the user and create a new WAV file that contains the resulting reversed audio. For simplicity’s sake, we’ll limit the files we deal with to the WAV format. At the time the user executes the program, they should provide, using two command-line arguments, the name of the input file to be read and reversed, and the name of the output file they would like to save the resulting audio in. A successfully executed program should not output any text, and should create a WAV file with the user-specified name that plays the audio of the input WAV file in reverse. For example:
 
@@ -94,7 +94,7 @@ Just be careful with that -f switch, as it “forces” deletion without prompti
 
 - Finally, be sure to close any files you’ve opened!
 
-# Usage
+## Usage
 
 Here are a few examples of how the program should work. For example, if the user omits one of the command-line arguments:
 

@@ -1,13 +1,13 @@
 # Snackbar
 
-### Learning Goals
+## Learning Goals
 
 - Practice using structs
 - Write a linear search algorithm
 
 ![Alt text](img/beach-g1e2b206d7_1280.jpg)
 
-### Background
+## Background
 
 Imagine you’re at the beach and want to order a number of items from the snack bar. You have a limited amount of cash on you, and you want to get a total cost for your items before ordering. In ``snackbar.c`` you will complete two functions. First is ``add_items`` which will add at least the first 4 items on the Beach Burger Shack menu. Then you will complete ``get_cost`` which will implement a linear search algorithm to search for each item you choose, and return the corresponding price.
 
@@ -17,11 +17,11 @@ Imagine you’re at the beach and want to order a number of items from the snack
 >
 > There is a function in ``strings.h`` that may come in handy here.
 
-### Implementation Details
+## Implementation Details
 
 The ``main`` function is already complete. After calling ``add_items`` to initialize the ``menu`` array, it will print out the menu items and their prices, prompting you to keep selecting items until you press enter without typing anything in. You are to complete two functions, ``add_items``, which adds at least the first four menu items, and ``get_cost`` to return the cost of each item. When you are creating a linear search algorithm in ``get_cost``, do make sure that it is case insentive.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Your program should behave as follows:
 

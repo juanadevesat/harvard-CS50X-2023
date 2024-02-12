@@ -7,7 +7,7 @@ Determine which of two Scrabble words is worth more.
     Player 2: science
     Player 1 wins!
 
-### Background
+## Background
 In the game of Scrabble, players create words to score points, and the number of points is the sum of the point values of each letter in the word.
 
         A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z
@@ -15,7 +15,7 @@ In the game of Scrabble, players create words to score points, and the number of
 
 For example, if we wanted to score the word ``Code``, we would note that in general Scrabble rules, the ``C`` is worth ``3`` points, the ``o`` is worth ``1`` point, the ``d`` is worth ``2`` points, and the ``e`` is worth ``1`` point. Summing these, we get that Code is worth ``3 + 1 + 2 + 1 = 7`` points.
 
-### Implementation Details
+## Implementation Details
 
 Complete the implementation of ``scrabble.c``, such that it determines the winner of a short scrabble-like game, where two players each enter their word, and the higher scoring player wins.
 
@@ -36,7 +36,7 @@ Complete the implementation of ``scrabble.c``, such that it determines the winne
 >
 > Recall that computers represent characters using *ASCII*, a standard that represents each character as a number.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Your program should behave per the examples below.
 

@@ -1,11 +1,11 @@
 # Recursive atoi
 
-### Learning Goals
+## Learning Goals
 
 - Deepen an understanding of strings
 - Practice creating recursive functions
 
-### Background
+## Background
 
 Imagine that you travel back in time to the 1970’s, when the ``C`` programming language was first created. You are hired as a programmer to come up with a way to convert ``strings`` to ``ints``. (You may have used a function just like this in Week 2, called ``atoi``). You want to be thorough in your development process and plan to try several approaches before deciding on the most efficient.
 
@@ -23,11 +23,11 @@ In this problem, you will start with a simple implementation of ``atoi`` that ha
 >
 > Remember you need a base case when creating a recursive function.
 
-### Implementation Details
+## Implementation Details
 
 In the recursive version of ``convert``, start with the last ``char`` and convert it into an integer value. Then shorten the ``string``, removing the last ``char``, and then recursively call ``convert`` using the shortened string as input, where the next ``char`` will be processed.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Your program should behave per the examples below.
 
@@ -43,7 +43,7 @@ Enter a positive integer: 98765
 98765
 ```
 
-### A More Thorough Implementation
+## A More Thorough Implementation
 
 The actual version of atoi must handle negative numbers, as well as leading spaces and non-numeric characters. It might look something like this:
 

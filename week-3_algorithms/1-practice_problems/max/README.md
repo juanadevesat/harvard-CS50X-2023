@@ -1,11 +1,11 @@
 # Max
 
-### Learning Goals+
+## Learning Goals+
 
 - Pass an array into a function
 - Create a helper function that finds a maximum value
 
-### Background
+## Background
 
 There are many situations where you’ll find it helpful to have a function that finds the maximum (and minimum) value in an array. Since there is no built-in ``max`` function in ``C``, you’ll create one in this practice problem. You can then use it in upcoming problem sets where it may be helpful!
 
@@ -15,11 +15,11 @@ There are many situations where you’ll find it helpful to have a function that
 >
 > Loop through the array and reset this max value every time you find a value that’s larger.
 
-### Implementation Details
+## Implementation Details
 
 The ``main`` function initializes the array, asks the user to enter values, and then passes the array and the number of items to the ``max`` function. Complete the ``max`` function by iterating through every element in the array, and return the maximum value.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Your program should behave per the examples below.
 

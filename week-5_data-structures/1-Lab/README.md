@@ -11,13 +11,13 @@ Simulate the inheritance of blood types for each member of a family.
             Grandparent (Generation 2): blood type AO
             Grandparent (Generation 2): blood type BO
 
-### Background
+## Background
 
 A person’s blood type is determined by two alleles (i.e., different forms of a gene). The three possible alleles are A, B, and O, of which each person has two (possibly the same, possibly different). Each of a child’s parents randomly passes one of their two blood type alleles to their child. The possible blood type combinations, then, are: OO, OA, OB, AO, AA, AB, BO, BA, and BB.
 
 For example, if one parent has blood type AO and the other parent has blood type BB, then the child’s possible blood types would be AB and OB, depending on which allele is received from each parent. Similarly, if one parent has blood type AO and the other OB, then the child’s possible blood types would be AO, OB, AB, and OO.
 
-### Understanding
+## Understanding
 
 Take a look at the distribution code in `inheritance.c`.
 
@@ -27,7 +27,7 @@ Now, take a look at the `main` function. The function begins by “seeding” (i
 
 The `create_family` and `free_family` functions are left to you to write!
 
-### Implementation Details
+## Implementation Details
 
 Complete the implementation of `inheritance.c`, such that it creates a family of a specified generation size and assigns blood type alleles to each family member. The oldest generation will have alleles assigned randomly to them.
 
@@ -57,7 +57,7 @@ The `free_family` function should accept as input a pointer to a `person`, free 
 - Remember, to access a variable via a pointer, we can use arrow notation.
     - For example, if `p` is a pointer to a person, then a pointer to this person’s first parent can be accessed by `p->parents[0]`.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Upon running `./inheritance`, your program should adhere to the rules described in the background. The child should have two alleles, one from each parent. The parents should each have two alleles, one from each of their parents.
 

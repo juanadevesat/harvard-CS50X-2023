@@ -18,7 +18,7 @@ Write a program to run simulations of the FIFA World Cup.
     Uruguay: 0.1% chance of winning
     Mexico: 0.1% chance of winning
 
-### Background
+## Background
 
 In soccer’s World Cup, the knockout round consists of 16 teams. In each round, each team plays another team and the losing teams are eliminated. When only two teams remain, the winner of the final match is the champion.
 
@@ -28,7 +28,7 @@ Using this information, we can simulate the entire tournament by repeatedly simu
 
 Your task in this lab is to do just that using Python!
 
-### Understanding
+## Understanding
 
 Start by taking a look at the `2018m.csv` file. This file contains the 16 teams in the knockout round of the 2018 Men’s World Cup and the ratings for each team. Notice that the CSV file has two columns, one called `team` (representing the team’s country name) and one called `rating` (representing the team’s rating).
 
@@ -50,7 +50,7 @@ Finally, at the end of `main`, we sort the teams in descending order of how many
 
 Populating `teams` and `counts` and writing the `simulate_tournament` function are left up to you!
 
-### Implementation Details
+## Implementation Details
 
 Complete the implementation of `tournament.py`, such that it simulates a number of tournaments and outputs each team’s probability of winning.
 
@@ -76,7 +76,7 @@ Finally, back in the `main` function, run `N` tournament simulations, and keep t
 - Recall that if `counts` is a dictionary, then syntax like `counts[team_name] = x` will associate the key stored in `team_name` with the value stored in `x`.
 - You can use the `in` keyword in Python to check if a dictionary has a particular key already. For example, `if "Portugal" in counts:` will check to see if `"Portugal"` already has an existing value in the counts dictionary.
 
-### Hints
+## Hints
 
 - When reading in the file, you may find this syntax helpful, with `filename` as the name of your file and `file` as a variable.
 
@@ -87,7 +87,7 @@ with open(filename) as file:
 
 - In Python, to append to the end of a list, use the `.append()` function.
 
-### Testing+
+## Testing+
 
 Your program should behave per the examples below. Since simulations have randomness within each, your output will likely not perfectly match the examples below.
 
@@ -130,7 +130,7 @@ Nigeria: 0.1% chance of winning
 
 - You might be wondering what actually happened at the 2018 and 2019 World Cups! For Men’s, France won, defeating Croatia in the final. Belgium defeated England for the third place position. For Women’s, the United States won, defeating the Netherlands in the final. England defeated Sweden for the third place position.
 
-### Number of Simulations
+## Number of Simulations
 
 Once you’re sure your code is correct, let’s tinker with the value of `N`, the constant at the top of our file, to adjust the number of times we simulate the tournament. More tournament simulations will give us more accurate predictions (why?), at the cost of time.
 

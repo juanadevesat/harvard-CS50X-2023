@@ -1,6 +1,6 @@
 # Mario
 
-### World 1-1
+## World 1-1
 
 Toward the beginning of World 1-1 in Nintendo’s Super Mario Brothers, Mario must hop over adjacent pyramids of blocks, per the below.
 
@@ -42,7 +42,7 @@ Height: 4
 
 Notice that width of the “gap” between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids’ heights.
 
-### How to Test Your Code
+## How to Test Your Code
 
 Does your code work as prescribed when you input
 

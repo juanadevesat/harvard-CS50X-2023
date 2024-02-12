@@ -1,6 +1,6 @@
 # N0 V0w3ls
 
-### Learning Goals
+## Learning Goals
 
 - Practice using strings
 - Practice using command-line arguments
@@ -8,7 +8,7 @@
 
 ![Alt text](img/leetspeak-t.jpeg)
 
-### Background
+## Background
 If you’ve been on the internet, you might have seen “leetspeak” (or “l33tsp36k” for our purposes!), which involves the substitution of symbols for alphabetical characters, where those symbols somewhat resemble their alphabetical counterparts. In this lab, you’ll write a program to replace certain vowels with digits!
 
 Up until now, you’ve frequently written programs for which you’ve been provided distribution code. You’ll notice when downloading the “distro” for this problem, you start with nothing more than a couple of commonly used libraries and an empty main function. In this problem, you will convert a word, which you will input at the command line, to a corresponding word with numbers replacing vowels.
@@ -20,11 +20,11 @@ Up until now, you’ve frequently written programs for which you’ve been provi
 > Be sure to check for the correct number of command-line arguments before doing anything else in your main function.
 
 
-### Demo
+## Demo
 
 ![Alt text](img/no-vowelsDemo.gif)
 
-### Implementation Details
+## Implementation Details
 
 - Implement your program in a file called ``no-vowels.c`` in a directory called ``no-vowels``.
 - Your program must accept a single command-line argument, which will be the word that you want to convert.
@@ -35,7 +35,7 @@ Up until now, you’ve frequently written programs for which you’ve been provi
 - The main function will then print the converted word, followed by ``\n``.
 - You may want to try using the ``switch`` statement in your replace function.
 
-### How to Test Your Code
+## How to Test Your Code
 Your program should behave per the examples below.
 
 ```

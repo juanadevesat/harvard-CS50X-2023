@@ -5,7 +5,7 @@ Implement a program that identifies a person based on their DNA, per the below.
     $ python dna.py databases/large.csv sequences/5.txt
     Lavender
 
-### Background
+## Background
 
 DNA, the carrier of genetic information in living things, has been used in criminal justice for decades. But how, exactly, does DNA profiling work? Given a sequence of DNA, how can forensic investigators identify to whom it belongs?
 
@@ -32,7 +32,7 @@ In practice, since analysts know on which chromosome and at which location in th
 
 Your task is to write a program that will take a sequence of DNA and a CSV file containing STR counts for a list of individuals and then output to whom the DNA (most likely) belongs.
 
-### Specification
+## Specification
 
 In a file called `dna.py`, implement a program that identifies to whom a sequence of DNA belongs.
 
@@ -46,7 +46,7 @@ In a file called `dna.py`, implement a program that identifies to whom a sequenc
     - You may assume that the STR counts will not match more than one individual.
     - If the STR counts do not match exactly with any of the individuals in the CSV file, your program should print `No match`.
 
-### Usage
+## Usage
 
 Your program should behave per the example below:
 
@@ -65,14 +65,14 @@ $ python dna.py data.csv
 Usage: python dna.py data.csv sequence.txt
 ```
 
-### Hints
+## Hints
 
 - You may find Python’s `csv` module helpful for reading CSV files into memory. You may want to take advantage of either `csv.reader` or `csv.DictReader`.
 - The `open` and `read` functions may prove useful for reading text files into memory.
 - Consider what data structures might be helpful for keeping tracking of information in your program. A `list` or a `dict` may prove useful.
 - Remember we’ve defined a function (`longest_match`) that, given both a DNA sequence and an STR as inputs, returns the maximum number of times that the STR repeats. You can then use that function in other parts of your program!
 
-### Testing
+## Testing
 
 Run your program as `python dna.py databases/small.csv sequences/1.txt`. Your program should output `Bob`.
 

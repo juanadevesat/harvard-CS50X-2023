@@ -6,7 +6,7 @@ Implement a program that determines whether a provided credit card number is val
     Number: 378282246310005
     AMEX
 
-### Specification
+## Specification
 
 In `credit.py`, write a program that prompts the user for a credit card number and then reports (via `print`) whether it is a valid American Express, MasterCard, or Visa card number, exactly as you did in Problem Set 1, except that your program this time should be written in Python.
 
@@ -16,7 +16,7 @@ For simplicity, you may assume that the user’s input will be entirely numeric 
 
 Best to use `get_int` or `get_string` from CS50’s library to get users’ input, depending on how you to decide to implement this one.
 
-### Usage
+## Usage
 
 Your program should behave per the example below.
 
@@ -24,11 +24,11 @@ Your program should behave per the example below.
     Number: 378282246310005
     AMEX
 
-### Hints
+## Hints
 
 It’s possible to use regular expressions to validate user input. You might use Python’s `re` module, for example, to check whether the user’s input is indeed a sequence of digits of the correct length.
 
-### Testing
+## Testing
 
 Run your program as `python credit.py`, and wait for a prompt for input. Type in `378282246310005` and press enter. Your program should output `AMEX`.
 

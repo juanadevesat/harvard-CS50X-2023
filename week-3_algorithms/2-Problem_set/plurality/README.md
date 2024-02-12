@@ -10,13 +10,13 @@ For this program, you’ll implement a program that runs a plurality election, p
     Vote: Alice
     Alice
 
-### Background
+## Background
 
 Elections come in all shapes and sizes. In the UK, the Prime Minister is officially appointed by the monarch, who generally chooses the leader of the political party that wins the most seats in the House of Commons. The United States uses a multi-step Electoral College process where citizens vote on how each state should allocate Electors who then elect the President.
 
 Perhaps the simplest way to hold an election, though, is via a method commonly known as the “plurality vote” (also known as “first-past-the-post” or “winner take all”). In the plurality vote, every voter gets to vote for one candidate. At the end of the election, whichever candidate has the greatest number of votes is declared the winner of the election.
 
-### Understanding
+## Understanding
 
 Let’s take a look at ``plurality.c`` and read through the distribution code that’s been provided to you.
 
@@ -28,7 +28,7 @@ Now, take a look at the ``main`` function itself. See if you can find where the 
 
 If you look further down in the file, though, you’ll notice that the ``vote`` and ``print_winner`` functions have been left blank. This part is up to you to complete!
 
-### Specification
+## Specification
 
 Complete the implementation of ``plurality.c`` in such a way that the program simulates a plurality vote election.
 
@@ -43,7 +43,7 @@ Complete the implementation of ``plurality.c`` in such a way that the program si
 
 You should not modify anything else in ``plurality.c`` other than the implementations of the ``vote`` and ``print_winner`` functions (and the inclusion of additional header files, if you’d like).
 
-### Usage
+## Usage
 
 Your program should behave per the examples below.
 
@@ -78,7 +78,7 @@ Alice
 Bob
 ```
 
-### Testing
+## Testing
 
 Be sure to test your code to make sure it handles…
 

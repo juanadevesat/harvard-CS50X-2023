@@ -1,6 +1,6 @@
 # Problem Set 2
 
-### What to Do
+## What to Do
 
 Be sure you have completed Lab 2 before beginning this problem set.
 

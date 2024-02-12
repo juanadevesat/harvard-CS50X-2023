@@ -4,7 +4,7 @@ For this problem, you’ll implement a program that behaves similarly to the pop
 
 ![alt text](img/Screenshot_1.png)
 
-### Background
+## Background
 
 Odds are, if you’re a Facebook user, at least one of your friends posted something looking like this, particularly back in early 2022 when it was all the rage:
 
@@ -37,7 +37,7 @@ At which point, the user should type in a 5-letter word. Of course, the user cou
 
 Notice that we didn’t even count any of those invalid attempts as guesses. But as soon as they made a legitimate attempt, we counted it as a guess and reported on the status of the word. Looks like the user has a few clues now; they know the word contains an ``a`` and an ``e`` somewhere, but not in the exact spots they appear in the word games. And they know that ``g``, ``m``, and ``s`` don’t appear in the word at all, so future guesses can omit them. Perhaps they might try, say, ``heart`` next!
 
-### Specification
+## Specification
 
 Design and implement a program, ``wordle.c``, that completes the implementation of our Wordle50 clone of the game. You’ll notice that some large pieces of this program have already been written for you–you are not allowed to modify any of those parts of the program. Instead, your work should be constrained to the seven ``TODO``s we’ve left behind for you to fill in. Each one of those parts solves a specific problem, and we recommend you tackle them in order from 1 to 7. Each numbered ``TODO`` corresponds to the same item in the below list.
 

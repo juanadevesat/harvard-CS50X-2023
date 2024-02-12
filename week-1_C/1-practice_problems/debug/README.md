@@ -1,12 +1,15 @@
 # Debug
-### Learning Goals
+
+## Learning Goals
+
 - Become familiar with C syntax
 - Learn what C compiler error messages mean
 - Get practice debugging
 
 ![Alt text](img/first_bug.jpg)
 
-### Background
+## Background
+
 There are two kinds of errors that can occur when writing a program. The first errors you are likely to encounter are **syntactical** errors. In addition to syntactical errors, there can also be logical errors, which we’ll take a look at soon.
 
 In computer science, syntax is important for a computer to understand what you are telling it to do. Each programming language has its own syntactical rules, which include the combination of both words and punctuation.
@@ -21,11 +24,12 @@ This lab starts with distribution code which has several syntactical errors. The
 >
 > If you are still stuck, try typing into the terminal help50 make debug.
 
-### Demo
+## Demo
 
 ![Alt text](img/debugDemo.gif)
 
-### How to Test Your Code
+## How to Test Your Code
+
 Your program should behave per the examples below.
 
 ```
