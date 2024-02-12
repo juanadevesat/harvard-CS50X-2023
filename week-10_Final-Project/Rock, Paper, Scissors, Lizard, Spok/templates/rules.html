@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/x5Q6-wMx-K8?si=1GCTzUrXGu3oZW5M&amp;start=21&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<table class="center">
+    <tr>
+        <td class="rules-text">
+                <p>Scissors cuts paper</p>
+                <p>Paper covers rock</p>
+                <p>Rock crushes lizard</p>
+                <p>Lizard poisons Spock</p>
+                <p>Spock smashes scissors</p>
+                <p>Scissors decapitates lizard</p>
+                <p>Lizard eats paper</p>
+                <p>Paper disproves Spock</p>
+                <p>Spock vaporizes rock</p>
+                <p>Rock crushes scissors</p>
+        </td>
+        <td>
+            <img src="static/Rules.png" class="rules-img">
+        </td>
+</table>
+<br>
+<a href="/game"><button class="btn btn-primary" type="button">I'm ready!</button></a>
+
+{% endblock %}

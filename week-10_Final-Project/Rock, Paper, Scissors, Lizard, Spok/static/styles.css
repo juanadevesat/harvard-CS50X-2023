@@ -1,0 +1,72 @@
+main {
+    margin-top: 25px;
+}
+
+
+.center {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rules-img {
+    width: auto;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.welcome {
+    width: auto;
+    min-width: 500px;
+    max-width: 700px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.rules-text {
+    width: 300px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.game-button {
+    padding: 5px;
+}
+
+.game-button-img {
+    width: 150px;
+}
+
+.results-column {
+    width: 350px;
+}
+
+.tie{
+    width: 300px;
+}
+
+.winner {
+    filter: hue-rotate(-90deg);
+    width: 350px;
+}
+
+.loser {
+    filter: hue-rotate(120deg);
+    width: 200px;
+}
+
+#index_button {
+    width: 20%;
+    min-width: 130px;
+    max-width: 216px;
+}
+
+.alert{
+    text-align: center;
+}
+
+#ranking {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}

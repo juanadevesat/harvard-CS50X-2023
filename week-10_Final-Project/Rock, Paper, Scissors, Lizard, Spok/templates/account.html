@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block script %}
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block main %}
+
+    <div class="container text-center">
+        <div class="row">
+            <!-- Pie chart -->
+            <div class="col-sm-4" style="z-index: 0;">
+                <h4>My moves</h4>
+                <div id="container"></div>
+                <script>
+                    var moves = {{ moves|safe }}
+                    var pie = new ej.charts.AccumulationChart({
+                        //Initializing Series
+                        series: [
+                            {
+                                dataSource: [
+                                    { 'x': 'Rock', y: moves['R'] }, { 'x': 'Paper', y: moves['P'] },
+                                    { 'x': 'Scissors', y: moves['S'] }, { 'x': 'Lizard', y: moves['L'] }, 
+                                    { 'x': 'Spok', y: moves['V'] }
+                                ],
+                                dataLabel: {
+                                    visible: true,
+                                    position: 'Inside',
+                                },
+                                xName: 'x',
+                                yName: 'y'
+                            }
+                        ],
+                    });
+                    pie.appendTo('#container');
+                </script>
+            
+                <!-- Account modification buttons -->
+                <br>
+                <div class="row">
+
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Change Username
+                        </a>
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                            Change Password
+                        </a>
+                        <a href="/game"><button class="btn btn-primary" type="button">Let's Play!</button></a>
+                    </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+
+                                <form action="/account" method="post">
+                                    <div class="mb-3">
+                                        <input class="form-control mx-auto w-auto" id="newname" name="newname" placeholder="New username" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-control mx-auto w-auto" id="confname" name="confname" placeholder="Confirm new username" type="text">
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Change Username</button>
+                                </form>
+                        
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+
+                                <form action="/account" method="post">
+                                    <div class="mb-3">
+                                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="curpass" name="curpass" placeholder="Current password" type="password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-control mx-auto w-auto" id="newpass" name="newpass" placeholder="New password" type="password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-control mx-auto w-auto" id="confpass" name="confpass" placeholder="Confirm new password" type="password">
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Change Password</button>
+                                </form>
+                        
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-8">  
+                
+                <br>
+                <!-- Ranking table -->
+                <table class="table table-striped" id="ranking">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Score</th>
+                        <th>Name</th>
+                        <th>Wins</th>
+                        <th>Ties</th>
+                        <th>Losses</th>
+                    </thead>
+                    <tbody>
+                        {% for rank in ranking %}
+                            <tr>
+                                <td>{{ rank.rank }}</td>
+                                <td>{{ rank.score }}</td>
+                                <td>{{ rank.username }}</td>
+                                <td>{{ rank.wins }}</td>
+                                <td>{{ rank.ties }}</td>
+                                <td>{{ rank.losses }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<br><br>
+<h5>Would you like to change player?</h5>
+<br>
+<form action="/restart" method="post">
+    <input id = "restart" name="restart" class="btn btn-primary" type="submit" value="Yes">
+    <input id = "restart" name="restart" class="btn btn-primary" type="submit" value="No">
+</form>
+<br>
+<img src="static/Rules.png" class="rules-img">
+
+{% endblock %}

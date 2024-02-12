@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<h4>{{ playername }}: {{ won }} | Rival: {{ lost }}</h4>
+<h4>Choose your move:</h4>
+<br>
+<table class="center">
+    <tr>
+        <td class="game-button">
+            <form action="/game" method="post">
+                <button class="btn btn-outline-dark" id = "game" name="game" type="submit" value="R"><img src="static/Rock.png" class="game-button-img"></button>
+            </form>
+        </td>
+        <td class="game-button">
+            <form action="/game" method="post">
+                <button class="btn btn-outline-dark" id = "game" name="game" type="submit" value="P"><img src="static/Paper.png" class="game-button-img"></button>
+            </form>
+        </td>
+        <td class="game-button">
+            <form action="/game" method="post">
+                <button class="btn btn-outline-dark" id = "game" name="game" type="submit" value="S"><img src="static/Scissors.png" class="game-button-img"></button>
+            </form>
+        </td>
+        <td class="game-button">
+            <form action="/game" method="post">
+                <button class="btn btn-outline-dark" id = "game" name="game" type="submit" value="L"><img src="static/Lizard.png" class="game-button-img"></button>
+            </form>
+        </td>
+        <td class="game-button">
+            <form action="/game" method="post">
+                <button class="btn btn-outline-dark" id = "game" name="game" type="submit" value="V"><img src="static/Spock.png" class="game-button-img"></button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <br>
+    {% if (won == lost) %}
+    <h4>Just like scissors can't cut scissors,</h4>
+    <h4>you could not defeat eachother.</h4>
+    <br>
+    <h1>It's a tie</h1>
+    
+    {% elif (won > lost) %}
+    <h4>Like Spock vaporizing a rock,</h4>
+    <h4>you vaporized your rival.</h4>
+    <br>
+    <h1>Congratulations {{ playername }}, you win!</h1>
+
+    {% else %}
+    <h4>If a lizard can eat paper,</h4>
+    <h4>your rival can also defeat you.</h4>
+    <br>
+    <h1>Sorry {{ playername }}, you lose.</h1>
+
+    {% endif %}
+    <br>
+    <h4>{{ playername }}: {{ won }} | Rival: {{ lost }}</h4>
+    <br>
+    <h4>Would you like to play again?</h4>
+    <br>
+    <form action="/end" method="post">
+        <input id = "restart" name="restart" class="btn btn-primary" type="submit" value="Go again">
+        <input id = "restart" name="restart" class="btn btn-primary" type="submit" value="Change player">
+        <a href="/account"><button class="btn btn-primary" type="button">No, thank you</button></a>
+    </form>
+
+{% endblock %}
+
+
+{{ playername }}  {{ won }}  {{ lost }}

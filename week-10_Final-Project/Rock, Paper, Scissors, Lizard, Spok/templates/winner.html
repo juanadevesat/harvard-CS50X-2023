@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="center">
+        <h4>{{ playername }}: {{ won }}   |   Rival: {{ lost }}</h4>
+        <h2>winner: {{ winner }}</h2>
+    </div>
+
+    <a href="/game"><button class="btn btn-primary" type="button">Continue</button></a>
+    <a href="/end"><button class="btn btn-primary" type="button">End game</button></a>
+    
+    <table class="center">
+        <tr>
+            <th class="results-column"><h4>player choice:</h4></th>
+            <th class="results-column"><h4>computer choice:</h4></th>
+        </tr>
+        <tr>
+            {% if winner == 'tie' %}
+                <td class="results-column"><img src="{{ playerimg }}" class="tie"></td>
+                <td class="results-column"><img src="{{ computerimg }}"class="tie"></td>
+
+            {% elif winner == 'rival' %}
+                <td class="results-column"><img src="{{ playerimg }}" class="loser"></td>
+                <td class="results-column"><img src="{{ computerimg }}" class="winner"></td>
+
+            {% else %}
+                <td class="results-column"><img src="{{ playerimg }}" class="winner"></td>
+                <td class="results-column"><img src="{{ computerimg }}" class="loser"></td>
+
+            {% endif %}
+        </tr>
+    </table>
+
+{% endblock %}

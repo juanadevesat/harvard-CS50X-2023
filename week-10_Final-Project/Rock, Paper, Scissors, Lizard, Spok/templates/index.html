@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<img class="welcome" src="static/Welcome.png">
+
+<form action="/" method="post">
+    <button class="btn btn-primary" id="index_button" name="index_button" value="guest" type="submit">Play as Guest</button>
+    <button class="btn btn-primary" id="index_button" name="index_button" value="login" type="submit">Login</button>
+    <button class="btn btn-primary" id="index_button" name="index_button" value="register" type="submit">Register</button>
+</form>
+
+{% endblock %}
