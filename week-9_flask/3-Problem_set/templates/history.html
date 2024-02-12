@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <tr>
+        <th>Symbol</th>
+        <th>Number of shares</th>
+        <th class="right-align">Price per share</th>
+        <th>Timestamp</th>
+        </tr>
+        {% for history in history %}
+            <tr>
+                <td>{{ history.symbol }}</td>
+                {% if history.ammount > 0 %}
+                    <td>BOUGHT {{ history.ammount }} SHARES</td>
+                {% else %}
+                    <td>SOLD {{ history.ammount * -1 }} SHARES</td>
+                {% endif %}
+                <td class="right-align">{{ history.price }}</td>
+                <td>{{ history.date_time }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

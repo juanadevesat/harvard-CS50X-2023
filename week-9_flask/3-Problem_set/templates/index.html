@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <tr>
+        <th>Stocks owned</th>
+        <th>Number of shares</th>
+        <th class="right-align">Price per share</th>
+        <th class="right-align">Value of holding</th>
+        </tr>
+        {% for portfolio in portfolio %}
+            <tr>
+                <td>{{ portfolio.symbol }}</td>
+                <td>{{ portfolio.ammount }}</td>
+                <td class="right-align">{{ portfolio.price }}</td>
+                <td class="right-align">{{ portfolio.value }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <th class="right-align">Cash balance</td>
+            <th class="right-align">{{ balance | usd }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <th class="right-align">TOTAL</td>
+            <th class="right-align">{{ total | usd }}</td>
+        </tr>
+    </table>
+
+{% endblock %}
