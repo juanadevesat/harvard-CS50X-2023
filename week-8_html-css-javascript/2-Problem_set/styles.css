@@ -1,0 +1,168 @@
+@media (prefers-reduced-motion: no-preference) {
+* {
+    scroll-behavior: smooth;
+}
+}
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    color: #dfdfe2;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 4px;
+}
+
+nav {
+    width: 50%;
+    max-width: 550px;
+    height: 50px;
+    padding-right: 20px
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 50px;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-left: 10px;
+    color: #1b1b32;
+}
+
+h2 > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+h4 {
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-left: 100px;
+    color: #1434A4;
+}
+
+.btexperience {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Language flags in navbar*/
+#LANG {
+    position: relative;
+    max-width: 100px;
+    padding-top: 10px;
+}
+
+#ENG {
+    position: absolute;
+    left: 0;
+    width: 50%;
+}
+#ESP {
+    margin-left: 50%;
+    width: 50%;
+}
+
+/*text and image pairs*/
+.container{
+    position: relative;
+    max-width: 80%;
+}
+
+.text {
+    position: absolute;
+    left: 0;
+    width: 67%;
+}
+
+.image {
+    margin-left: 70%;
+    width: 20%;
+}
+
+.text-left {
+    position: absolute;
+    left: 0;
+    width: 40%;
+}
+
+.text-right {
+    margin-left: 50%;
+    width: 40%;
+}
+
+/*profile picture and instagram reel*/
+#photo, #instagram, #exp-imgs {
+    padding-top: 98px;
+}
+
+#cocktail {
+    padding-left: 30px
+}
